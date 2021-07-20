@@ -10,7 +10,7 @@ def daterange(start_date, end_date):
 start_date = date(2021, 7, 20)
 end_date = date(2022, 7, 19)
 for single_date in daterange(start_date, end_date):
-    d = str(single_date) + ' 12:00:00'
+    d = str(single_date) + 'T12:00:00+02:00'
     for j in range(0,randint(1, 10)):
         with open('commit.txt', 'w') as file:
             file.write(d)
